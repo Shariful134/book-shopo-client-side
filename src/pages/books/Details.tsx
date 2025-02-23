@@ -109,7 +109,7 @@ const Details = () => {
           )}
         </div>
       </div>
-      <div className=" text-center font-serif pt-8 ">
+      <div className=" text-center font-[inter] pt-8 ">
         <h2 className="text-3xl mb-2 text-cyan-500">
           -- <FaBook className="inline" /> Releted Book{" "}
           <FaBook className="inline" /> --{" "}
@@ -120,7 +120,7 @@ const Details = () => {
           category that you may love!
         </p>
       </div>
-      <div className="flex justify-center flex-wrap gap-4 pb-5 font-serif bg-[#fafafa]">
+      <div className="flex justify-center flex-wrap gap-4 pb-5 font-[inter] bg-[#fafafa]">
         {sameCategory?.map((sameBook: TBook) => {
           const inStock = sameBook.inStock;
           return (
@@ -147,22 +147,22 @@ const Details = () => {
                   <p>InStock: Unavailable</p>
                 )}
 
-                <div className="flex gap-2 flex-wrap justify-center">
+                <div className="flex gap-2 flex-wrap font-[inter] justify-center">
                   {admin == "admin" ? (
                     <div className="flex  flex-wrap justify-center gap-2">
                       <Link to={`/book-details/${sameBook?._id}`}>
-                        <button className="btn border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                        <button className="btn border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                           Details
                         </button>
                       </Link>
                       <Link to={`/book-update/${sameBook?._id}`}>
-                        <button className="btn border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                        <button className="btn border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                           Update
                         </button>
                       </Link>
                       <BookDelete id={sameBook?._id}></BookDelete>
                       <Link to="/">
-                        <button className="btn border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                        <button className="btn border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                           Home
                         </button>
                       </Link>
@@ -170,17 +170,17 @@ const Details = () => {
                   ) : (
                     <div className="flex gap-2 flex-wrap justify-center">
                       <Link to={`/book-details/${sameBook?._id}`}>
-                        <button className="btn border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                        <button className="btn border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                           Details
                         </button>
                       </Link>
                       <Link to="/">
-                        <button className="btn border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                        <button className="btn border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                           Home
                         </button>
                       </Link>
                       <Link to={`/book-order/${book._id}`}>
-                        <button className="btn border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                        <button className="btn border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                           Buy Now
                         </button>
                       </Link>
@@ -189,7 +189,7 @@ const Details = () => {
                 </div>
               </div>
               <div className="absolute top-[50%] invisible group-hover:visible  left-0 w-full">
-                <button className="btn w-full border-1 font-serif rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
+                <button className="btn w-full border-1 font-[inter] rounded-md border-gray-600 bg-gray-100 hover:bg-gray-200">
                   Add To Cart <IoMdCart className="text-xl" />
                 </button>
               </div>
