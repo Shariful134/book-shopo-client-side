@@ -1,3 +1,28 @@
+#Technology usages
+- react
+- react hooks form
+- zod resolvers
+- redux
+- jwt-decode
+- react icons
+- react router dom
+- sonner
+- tailwind
+- daisyui
+- shadcn ui
+- vite
+- 
+# install process
+-npm install
+
+# project start
+-npm run dev
+
+# project build
+-npm run build
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
